@@ -5,6 +5,108 @@ light blue: #1c5380
 */
 
 body {
-  font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin: 0;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	font: 200 16px/1.5 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+	background-image: url('./../images/bgtile.png');
+	background-size: 100% 40%;
+	background-repeat: no-repeat;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+main {
+	flex: 9;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	justify-content: space-evenly;
+}
+
+.phone-img {
+	display: flex;
+	justify-content: space-around;
+
+	align-self: center;
+	flex: 1;
+}
+
+.info-box {
+	flex: 1;
+	margin-right: 5rem;
+	/* border: solid 2px red; */
+}
+
+#info-box--heading {
+	color: #06365f;
+	margin: 0;
+}
+
+.info-box--top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.info-box--middle {
+	padding: 2.3rem 2.3rem 0 2.3rem;
+	font-size: 1rem;
+	background-image: url('./../images/frame.png');
+	background-repeat: no-repeat;
+}
+
+.info-box--bottom {
+	margin-left: 2rem;
+}
+
+button {
+	color: white;
+	font-size: 0.8rem;
+	width: 6rem;
+	height: 2.5rem;
+	text-align: center;
+	background: rgb(28, 83, 128);
+	background: linear-gradient(
+		180deg,
+		rgba(28, 83, 128, 0.9836135137648809) 0%,
+		rgba(28, 83, 128, 1) 98%,
+		rgba(6, 54, 95, 1) 100%
+	);
+	border: 1px solid #06365f;
+	border-radius: 0.25rem;
+}
+
+button img {
+	padding-right: 0.3rem;
+}
+
+footer {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	font-size: 0.75rem;
+}
+
+footer nav ul {
+	display: flex;
+
+	list-style: none;
+}
+
+ul li {
+	color: #1c5380;
+	padding: 0.5rem;
+}
+
+footer p {
+	margin-left: 2rem;
+	color: grey;
 }
